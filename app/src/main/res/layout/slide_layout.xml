@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="588dp"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.608">
+
+        <ImageView
+                android:id="@+id/images"
+                android:layout_width="wrap_content"
+                android:layout_height="233dp"
+                android:layout_marginTop="35dp"
+                app:srcCompat="@drawable/locatcofee" />
+
+        <TextView
+                android:id="@+id/headings"
+                android:layout_width="288dp"
+                android:layout_height="57dp"
+                android:layout_below="@+id/images"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gloria_hallelujah"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/descs"
+                android:layout_width="289dp"
+                android:layout_height="127dp"
+                android:layout_below="@+id/headings"
+                android:layout_marginTop="10dp"
+                android:background="#00C2BDBD"
+                android:fontFamily="@font/comfortaa_light"
+                android:gravity="center"
+                android:text="orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+                android:textSize="17sp" />
+
+        <Button
+                android:id="@+id/started_btn"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:background="#359BCA"
+                android:onClick="goToLogin"
+                android:text="Let's Get Started"
+                android:transitionName="transition_started"
+                android:textColor="#FFF"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
